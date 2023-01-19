@@ -1,0 +1,86 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	double moneda;
+	double peso;
+	double distancia;
+	char opcion;
+	cout << " que quire sabes Moneda (m), Peso(p),Distancia(d): ";
+	cin >> opcion;
+	switch (opcion)
+	{
+	case 'm': 
+		cout << "Ingrese el valor que quire convertir: ";
+		cin >> moneda;
+		cout << "ingrese la opcion que quire transformar dolar(d), euro(e), dolar canadiense (c), yen(y),yan(h): ";
+		cin >> opcion;
+		switch (opcion)
+		{
+		case 'd': cout << "los pesos en dolares: " << moneda * 19 << endl;
+			system("pause");
+			break;
+		case 'e': cout << "los pesos en euros: " << (moneda * 25) << endl;
+			system("pause");
+			break;
+		case 'c': cout << "los pesos en dolar canadirense: " << moneda * 14 << endl;
+			system(" pause ");
+			break;
+		case 'y': cout << "los pesos en yen: " << moneda * 0.15 << endl;
+			system("pasue");
+			break;
+		case 'h':cout << "los pesos en yuan: " << moneda * 2.76 << endl;
+			system("pause");
+			break;
+		}
+	case 'd':
+		cout << "Ingrese la distancia en kilometros: ";
+		cin >> distancia;
+		cout << "Ingrese la opcion que quiera transformar pulgada (p), pies (f), centimetros (c), nanometros (n), años luz (l): ";
+		cin >> opcion;
+		switch (opcion)
+		{ 
+		case 'p': cout << " la distancia en pulgadas es: "<<distancia *39370<<endl;
+		system("pause");
+			break;
+		case 'f': cout << "la distancia en pies: "<<distancia *3281<<endl;
+		system("pause");
+			break;
+		case 'c': cout << " la distancia en centumetros es: " << distancia * 100000 << endl;
+			system("pause");
+			break;
+		case 'n': cout << "la distancia en nanometros es: " << distancia * 1000000000000 << endl;
+			system("pause"); 
+			break;
+		case 'l': cout << "la distancia en años lus es: " << distancia * 9460472581<<endl;
+			system("pause");
+			break;
+		}
+	case 'p':
+		cout << "ingrese el peso a convertir: ";
+		cin >> peso;
+		cout << "Ingrese la opcion la cual quiera transformar tonelada (t), onza (o), libra(l), microgramo (m), teragramos (g): ";
+		cin >> opcion;
+		switch (opcion)
+		{
+		case 't':cout << "el peso en toneladas es : " << peso / 0.001<<endl;
+			system("pause");
+			break;
+		case 'o':cout << "el peso en onzas es: " << peso * 35.274<<endl;
+			system("pause");
+			break;
+		case 'l':cout << "el peso en libras es: " << peso * 2.205<<endl;
+			system("pause");
+			break;
+		case 'm': cout << "el peso en microgramos es: " << peso * 0.0000000010000<<endl;
+			system("pause");
+			break;
+		case 'g':cout << "el peso en tetagramos es: " << peso / 1000000000000<<endl;
+			system("pause");
+			break;
+		}
+
+     }
+}
+
+
